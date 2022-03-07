@@ -47,6 +47,7 @@
         }).then(res => {
             var token = res.data.token;
             localStorage.setItem("token", token);
+            alert("Logado com Sucesso!")
         }).catch(err => {
             alert("Login Invalido!");
         })
